@@ -3,7 +3,7 @@ TOP_DIR := $(shell pwd)
 # each tag change this
 ENV_DIST_VERSION := v1.0.0
 
-ROOT_NAME ?= gitbook-vuepress-api-doc-template
+ROOT_NAME ?= vuepress-api-doc-template
 
 ENV_MODULE_MAKE_FILE ?= ./Makefile
 ENV_MODULE_MANIFEST = ./package.json

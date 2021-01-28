@@ -4,6 +4,13 @@
 
 - source: [github.com/bridgewwater/vuepress-api-doc-template](github.com/bridgewwater/vuepress-api-doc-template)
 
+## markdown-plugin
+
+### mermaid
+
+- [https://github.com/eFrane/vuepress-plugin-mermaidjs](https://github.com/eFrane/vuepress-plugin-mermaidjs)
+
 ## icon
 
+- iconfont from [https://www.iconfont.cn/](https://www.iconfont.cn/)
 - icon from [https://fontawesome.com/](https://fontawesome.com/)
