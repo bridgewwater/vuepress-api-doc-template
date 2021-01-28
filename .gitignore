@@ -1,5 +1,6 @@
 ## vuepress
 
+dist/
 docs/.vuepress/dist/
 
 # Node rules:
