@@ -3,6 +3,8 @@ const heads = require('./config/heads.js');
 const navConf = require('./config/navConf.js');
 
 module.exports = {
+  // host: 'localhost', // host
+  // port: '8099', //port
   themeConfig: {
     // 导航栏 Logo path public
     logo: '/assets/img/logo.png',
