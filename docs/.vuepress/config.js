@@ -54,7 +54,8 @@ module.exports = {
   // 在 vuepress 中完全地兼容 PWA
   head: heads,
   plugins: [
-    'vuepress-plugin-mermaidjs',
+    'vuepress-plugin-mermaidjs', // https://github.com/eFrane/vuepress-plugin-mermaidjs
+    'fulltext-search', // https://github.com/leo-buneev/vuepress-plugin-fulltext-search
     '@vuepress/pwa', // 渐进式的网页应用程序 网页内容有更新的时候有刷新按钮
     {
       serviceWorker: true,

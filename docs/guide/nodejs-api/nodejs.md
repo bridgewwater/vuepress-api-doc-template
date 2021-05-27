@@ -21,6 +21,43 @@ graph LR
 
 content level 2
 
+```Dockerfile
+# This dockerfile uses extends image https://hub.docker.com/_/golang/
+# VERSION 1
+# Author: sinlov
+# Command format: Instruction [arguments / command]
+MAINTAINER  sinlov sinlovgmppt@gmail.com
+
+FROM golang:1.10.3-alpine
+
+ADD ./src/github.com /go/src/github.com
+ADD ./build.sh /build.sh
+
+RUN chmod +x /build.sh \
+  && /build.sh
+
+# EXPOSE  80
+
+# ENTRYPOINT ["tail", "-F", "/var/log/faillog"]
+# CMD ["-F", "/var/log/faillog"]
+
+# ENV
+
+# ADD
+
+# COPY
+
+# ENTRYPOINT
+
+# VOLUME
+
+# USER
+
+# WORKDIR
+
+# ONBUILD
+```
+
 ### level 3
 
 content level 3
