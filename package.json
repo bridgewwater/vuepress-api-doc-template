@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:nav": "vuepress nav docs -f",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
@@ -28,7 +29,8 @@
     "@vuepress/plugin-search": "^1.8.2",
     "vuepress": "^1.8.2",
     "vuepress-plugin-fulltext-search": "^2.2.0",
-    "vuepress-plugin-mermaidjs": "^1.8.1"
+    "vuepress-plugin-mermaidjs": "^1.8.1",
+    "moment": "^2.29.1"
   },
   "dependencies": {
     "@form-create/element-ui": "^1.0.19",
@@ -37,6 +39,6 @@
     "form-create": "^1.6.6",
     "sass": "^1.26.10",
     "sass-loader": "^10.0.1",
-    "vuepress-sidebar-atuo": "^1.0.3"
+    "vuepress-plugin-auto-sidebar": "^2.2.3"
   }
 }

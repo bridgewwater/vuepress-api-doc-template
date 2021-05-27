@@ -49,6 +49,8 @@ clean: cleanDist
 install:
 	npm install
 
+nav:
+	npm run docs:nav
 dev:
 	npm run docs:dev
 

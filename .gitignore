@@ -1,5 +1,6 @@
 ## custom config
 /package-lock.json
+docs/.vuepress/nav.js
 ## vuepress
 
 dist/

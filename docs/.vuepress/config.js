@@ -1,43 +1,12 @@
+const pluginConf = require('./config/pluginConf.js');
 const heads = require('./config/heads.js');
-// const nav = require('./config/nav.js');
-// const sidebar = require('./config/sidebar.js');
-const { getChildren } = require('vuepress-sidebar-atuo');
+const navConf = require('./config/navConf.js');
 
 module.exports = {
   themeConfig: {
     // 导航栏 Logo path public
     logo: '/assets/img/logo.png',
-    nav: [
-      { text: '主页', link: '/index.html' },
-      {
-        text: '指南',
-        items: [
-          { text: '服务端', link: '/guide/service-api/service' },
-          { text: 'nodejs', link: '/guide/nodejs-api/nodejs' },
-        ],
-      },
-      { text: '关于我', link: '/about/' },
-      {
-        text: 'GitHub',
-        link: 'https://github.com/sinlov',
-        target: '_self',
-        rel: '',
-      },
-    ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: '服务端',
-          collapsable: true,
-          children: getChildren('./docs/guide/service-api/'),
-        },
-        {
-          title: 'nodejs',
-          collapsable: true,
-          children: getChildren('./docs/guide/nodejs-api/'),
-        },
-      ],
-    },
+    nav: navConf,
     sidebarDepth: 3,
     lastUpdated: 'Last Updated',
     // 项目开始时间
@@ -53,16 +22,6 @@ module.exports = {
   base: '/',
   // 在 vuepress 中完全地兼容 PWA
   head: heads,
-  plugins: [
-    'vuepress-plugin-mermaidjs', // https://github.com/eFrane/vuepress-plugin-mermaidjs
-    'fulltext-search', // https://github.com/leo-buneev/vuepress-plugin-fulltext-search
-    '@vuepress/pwa', // 渐进式的网页应用程序 网页内容有更新的时候有刷新按钮
-    {
-      serviceWorker: true,
-      updatePopup: {
-        message: '有新的内容更新',
-        buttonText: '刷新',
-      },
-    },
-  ],
+  plugins: pluginConf,
+  nav:navConf
 };
