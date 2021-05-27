@@ -2,7 +2,7 @@
 
 # vuepress-api-doc-template
 
-- source: [github.com/bridgewwater/vuepress-api-doc-template](github.com/bridgewwater/vuepress-api-doc-template)
+- source: [https://github.com/bridgewwater/vuepress-api-doc-template](https://github.com/bridgewwater/vuepress-api-doc-template)
 
 ## markdown-plugin
 
