@@ -13,10 +13,10 @@ pipeline {
         }
         stage('dev') {
             steps {
-            	sh 'chmod 777 ./script/*.sh'
-              sh './script/deliver.sh'
-              input message: 'Finished using the web site? (Click "Proceed" to continue)'
-              sh './script/kill.sh'
+                sh 'chmod 777 ./script/*.sh'
+                sh './script/deliver.sh'
+                input message: 'Finished using the web site? (Click "Proceed" to continue)'
+                sh './script/kill.sh'
             }
 		}
     }
