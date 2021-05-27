@@ -5,6 +5,10 @@ pipeline {
             args '-p 8000:8000'
         }
     }
+    options {
+        timeout(time: 1, unit: 'HOURS')
+        buildDiscarder(logRotator(numToKeepStr:'10'))
+    }
     stages {
         stage('install') {
             steps {
@@ -21,3 +25,10 @@ pipeline {
 		}
     }
 }
+
+// post {
+//     always {
+//         echo 'Clean up workspace'
+//         deleteDir()
+//     }
+// }
