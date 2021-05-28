@@ -10,29 +10,82 @@ sidebar: false
 这是一个 API 模板
 快速分享一个工具的使用方法
 
-
 ### 链接演示
 
 - 源码: [github.com/bridgewwater/vuepress-api-doc-template](github.com/bridgewwater/vuepress-api-doc-template)
 
-### 进度条示例
+### 高亮示例
 
-html,css,js
-<el-progress :text-inside="true" :stroke-width="26" :percentage="100"></el-progress>
-node.js
-<el-progress :text-inside="true" :stroke-width="24" :percentage="80" status="success"></el-progress>
-java
-<el-progress :text-inside="true" :stroke-width="22" :percentage="20" status="warning"></el-progress>
-typeScript
-<el-progress :text-inside="true" :stroke-width="20" :percentage="50" status="exception"></el-progress>
-Jquery
-<el-progress :text-inside="true" :stroke-width="26" :percentage="100"></el-progress>
-Vue
-<el-progress :text-inside="true" :stroke-width="24" :percentage="80" status="success"></el-progress>
-react
-<el-progress :text-inside="true" :stroke-width="22" :percentage="40" status="warning"></el-progress>
-echarts/g2/g6
-<el-progress :text-inside="true" :stroke-width="20" :percentage="50" status="exception"></el-progress>
+- 提示
+
+```md
+::: tip
+这是一个提示
+:::
+```
+
+::: tip
+这是一个提示
+:::
+
+- 警告
+
+```md
+::: warning
+这是一个警告
+:::
+```
+
+::: warning
+这是一个警告
+:::
+
+- 危险警告
+
+```md
+::: danger
+这是一个危险警告
+:::
+```
+
+::: danger
+这是一个危险警告
+:::
+
+- 详情块
+
+```md
+::: details
+这是一个详情块，在 IE / Edge 中不生效
+:::
+```
+
+::: details
+这是一个详情块，在 IE / Edge 中不生效
+:::
+
+- 你也可以自定义块中的标题
+
+```md
+::: danger STOP
+危险区域，禁止通行
+:::
+
+::: details 点击查看代码
+```js
+console.log('你好，VuePress！')
+:::
+```
+
+::: danger STOP
+危险区域，禁止通行
+:::
+
+::: details 点击查看代码
+```js
+console.log('你好，VuePress！')
+```
+:::
 
 ### 图标使用演示
 
